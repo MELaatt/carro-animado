@@ -1,0 +1,43 @@
+.padre{
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flor{
+    width: 5rem;
+    height: 5rem;
+    background-color: chocolate;
+    border-radius: 50%;
+}
+
+.flor:hover{
+    animation: flor-animada 2s linear infinite;
+}
+
+@keyframes flor-animada{
+    100%{
+        box-shadow: 
+        0rem -1rem #eea8ff,
+        0rem 1rem #eea8ff,
+        1rem 0rem #eea8ff,
+        -1rem 0rem #eea8ff,
+    
+        0rem -4rem #ffe2a8,
+        0rem 4rem #ffe2a8,
+        4rem 0rem #ffe2a8,
+        -4rem 0rem #ffe2a8,
+    
+        0rem -6rem #ffe2a8,
+        0rem 6rem #ffe2a8,
+        6rem 0rem #ffe2a8,
+        -6rem 0rem #ffe2a8,
+    
+        3rem -3rem #ffa8a8,
+        3rem 3rem #ffa8a8,
+        -3rem -3rem #ffa8a8,
+        -3rem 3rem #ffa8a8;
+
+        transform: rotate(1080deg);
+    }
+}

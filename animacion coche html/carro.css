@@ -1,0 +1,83 @@
+.fondo{
+    display: flex;
+    z-index: -1;
+    background-image: url(calle.png);
+    background-size: 100%;
+    width: 1500px;
+    height: 660px;
+    animation: fondo-animado 15s linear infinite;
+    animation-play-state: paused;
+}
+@keyframes fondo-animado{
+    100%{
+        background-position-x: -10000px;
+    }
+}
+
+.padre{
+    height: 0rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 26rem;
+    margin-left: 10rem;
+    animation: padre-anima 3s linear infinite;
+    animation-play-state: paused;
+}
+
+@keyframes padre-anima{
+    50%{
+        margin-left: 140px;
+    }
+}
+
+.carro{
+    display: flex;
+    z-index: 1;
+}
+
+.llanta{
+    display: flex;
+    z-index: 2;
+    margin-left: -10.5rem;
+    margin-top: 8rem;
+    animation: llanta-animada 2s linear infinite;
+    animation-play-state: paused;
+
+}
+
+.llanta-2{
+    display: flex;
+    z-index: 2;
+    margin-left: -27.5rem;
+    margin-top: 8rem;
+    animation: llanta-animada 2s linear infinite;
+    animation-play-state: paused;
+}
+
+.luz{
+    display: flex;
+    z-index: 2;
+    height: 120px;
+    margin-left: 25.7rem;
+    margin-top: 2.2rem;
+    animation: luz-animada 2s linear infinite;
+    animation-play-state: paused;
+
+}
+
+@keyframes luz-animada{
+    0%{
+        opacity: 100%;
+    }
+    50%{
+        opacity: 0%;
+    }
+}
+
+@keyframes llanta-animada{
+    100%{
+        transform: rotate(1080deg);
+        
+    }
+}
